@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Book Library</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    background: white;
+    color: black;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 15px;
+}
+.card-content h3 {
+    margin: 0 0 10px;
+}
+.card-content p {
+    font-size: 14px;
+}
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #2a5298;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.5);
+}
+</style>
+</head>
+<body><header>
+    <h1>📚 My E-Book Library</h1>
+    <p>Read and Explore Amazing Books</p>
+</header><div class="container"><div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Book">
+    <div class="card-content">
+        <h3>HTML Basics</h3>
+        <p>Learn the fundamentals of HTML.</p>
+        <a href="#" class="button">Read</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Book">
+    <div class="card-content">
+        <h3>CSS Design</h3>
+        <p>Master modern styling techniques.</p>
+        <a href="#" class="button">Read</a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Book">
+    <div class="card-content">
+        <h3>Web Development</h3>
+        <p>Complete guide to web projects.</p>
+        <a href="#" class="button">Read</a>
+    </div>
+</div>
+
+</div>
